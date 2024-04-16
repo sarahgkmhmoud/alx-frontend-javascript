@@ -8,7 +8,7 @@ export default function cleanSet(Set, String) {
     return '';
   }
   for (const item of Set) {
-    if (item.startsWith(String)) {
+    if (item && item.startsWith(String)) {
       filtervalue.push(item.slice(String.length));
     }
   }
